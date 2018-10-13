@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_b">
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_items">
+    </android.support.design.widget.NavigationView>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnCancel4"
+            android:layout_width="127dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="112dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/nobtn"
+            android:onClick="cmdCancel"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnUpdate2" />
+
+        <TextView
+            android:id="@+id/txtBalance3"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="87dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="158dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="40dp"
+            android:gravity="right"
+            android:text="5,000.00"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnBack11"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnUpdate2"
+            android:layout_width="127dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="112dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/yesbtn"
+            android:onClick="cmdUpdate"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnCancel4"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/txtNewPassword"
+            android:layout_width="270dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="272dp"
+            android:background="@drawable/transparentboxb"
+            android:ems="10"
+            android:hint="****"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColorHint="#728aa5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtConfirmPassword"
+            android:layout_width="270dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="168dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginStart="29dp"
+            android:background="@drawable/transparentboxb"
+            android:ems="10"
+            android:hint="****"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColorHint="#728aa5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/txtOldPassword"
+            android:layout_width="270dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="192dp"
+            android:background="@drawable/transparentboxb"
+            android:ems="10"
+            android:hint="****"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColorHint="#728aa5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnBack8"
+            android:layout_width="45dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:onClick="Navigate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/transparent" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.DrawerLayout>

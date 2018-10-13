@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nfc">
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_items">
+    </android.support.design.widget.NavigationView>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtBalance6"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="158dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="40dp"
+            android:gravity="right"
+            android:text="5,000.00"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnBack11"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="275dp"
+            android:layout_height="208dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="232dp"
+            android:onClick="Navigate"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/transdetection" />
+
+        <TextView
+            android:id="@+id/txtSeller"
+            android:layout_width="235dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="384dp"
+            android:gravity="center"
+            android:text="Seller: ATZ Store"
+            android:textColor="@color/DarkGray"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTransAmount"
+            android:layout_width="241dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="300dp"
+            android:gravity="center"
+            android:text="PHP 00.00"
+            android:textColor="@color/DarkGray"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="127dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="44dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/yesbtn"
+            android:text="Confirm"
+            android:onClick="cmdConfirm"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnCancel2"
+            android:layout_width="127dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="44dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/nobtn"
+            android:text="Cancel"
+            android:onClick="cmdCancel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@+id/btnConfirm" />
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="44dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:onClick="Navigate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/transparent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.DrawerLayout>

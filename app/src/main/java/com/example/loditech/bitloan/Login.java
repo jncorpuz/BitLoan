@@ -25,6 +25,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import static com.example.loditech.bitloan.Models.Account.account;
+
 public class Login extends AppCompatActivity {
     EditText username,password;
     Button cmdLogin;
@@ -70,7 +72,37 @@ public class Login extends AppCompatActivity {
 
     public void Login(View v){
         if(Check()){
+            Call<Account> call = RetrofitClient.getInstance().getAPI().Login(username.getText().toString(), password.getText().toString());
+            call.enqueue(new Callback<Account>() {
+                @Override
+                public void onResponse(Call<Account> call, Response<Account> response) {
+                    try {
+                        account = response.body();
+                        if (account != null) {
+                            switch (account.ID) {
+                                case 0: //Manager
+                                    break;
+                                case 1: //Client
+                                    Intent i = new Intent(Login.this, Home_Menu.class);
+                                    startActivity(i);
+                                    break;
+                                case 2: //Merchant
+                                    break;
+                            }
+                        }
+                    }
+                    catch (Exception ex) {
 
+                    }
+                }
+
+                @Override
+                public void onFailure(Call<Account> call, Throwable t) {
+
+                }
+            });
+
+            /*
             Call<User> call = RetrofitClient.getInstance().getAPI().LoginUser(username.getText().toString(),password.getText().toString());
             call.enqueue(new Callback<User>() {
                 @Override
@@ -103,6 +135,7 @@ public class Login extends AppCompatActivity {
                     password.getText().clear();
                 }
             });
+            */
         }else{
             Toast.makeText(this,"Fill the required fields.", Toast.LENGTH_LONG).show();
         }

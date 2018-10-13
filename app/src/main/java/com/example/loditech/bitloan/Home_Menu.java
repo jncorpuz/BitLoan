@@ -46,7 +46,7 @@ public class Home_Menu extends BaseDrawerActivity{
         getLayoutInflater().inflate(R.layout.home_menu, frameLayout);
         setTitle("Home Menu");
 
-        GetUser();
+        //GetUser();
 
         userName = (TextView) findViewById(R.id.txtUserName);
         userEmail = (TextView) findViewById(R.id.txtUserEmail);
@@ -56,13 +56,14 @@ public class Home_Menu extends BaseDrawerActivity{
         billsTotal = (TextView) findViewById(R.id.billsTotal);
         btnBack = (ImageView) findViewById(R.id.btnBack2);
 
-        userName.setText(Account.account.getFirstName());
-        userEmail.setText(Account.account.getEmailAddress());
-        balance.setText(Double.toString(Wallet.wallet.getAmount()));
-        points.setText(Double.toString(Rewards.rewards.getPoints()));
+        userName.setText(Account.account.FirstName);
+        userEmail.setText(Account.account.EmailAddress);
+        //balance.setText(Double.toString(Wallet.wallet.getAmount()));
+        //points.setText(Double.toString(Rewards.rewards.getPoints()));
     }
 
     public void GetUser(){
+        /*
         Call<User> call = RetrofitClient.getInstance().getAPI().GetUser(Account.account.getID());
         call.enqueue(new Callback<User>() {
             @Override
@@ -78,6 +79,7 @@ public class Home_Menu extends BaseDrawerActivity{
 
             }
         });
+        */
     }
 
     public void GetAllBillsDue(){

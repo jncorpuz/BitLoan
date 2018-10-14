@@ -78,8 +78,6 @@ public class Login extends AppCompatActivity {
                             switch (account.Role) {
                                 case "0": //Manager
                                     //Toast.makeText(Login.this, "Manager", Toast.LENGTH_SHORT).show();
-                                    i = new Intent(Login.this, Home_Menu_Merchant.class);
-                                    startActivity(i);
                                     break;
                                 case "1": //Client
                                     //Toast.makeText(Login.this, "Client", Toast.LENGTH_SHORT).show();
@@ -88,6 +86,8 @@ public class Login extends AppCompatActivity {
                                     break;
                                 case "2": //Merchant
                                     //Toast.makeText(Login.this, "Merchant", Toast.LENGTH_SHORT).show();
+                                    i = new Intent(Login.this, Home_Menu_Merchant.class);
+                                    startActivity(i);
                                     break;
                                 default:
                                     Toast.makeText(Login.this, "Failed", Toast.LENGTH_SHORT).show();

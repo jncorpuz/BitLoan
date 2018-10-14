@@ -86,7 +86,7 @@ public class Login extends AppCompatActivity {
                                     break;
                                 case "2": //Merchant
                                     //Toast.makeText(Login.this, "Merchant", Toast.LENGTH_SHORT).show();
-                                    i = new Intent(Login.this, Home_Menu_Merchant.class); //fix
+                                    i = new Intent(Login.this, Home_Menu_Merchant.class);
                                     startActivity(i);
                                     break;
                                 default:

@@ -13,7 +13,7 @@
         android:id="@+id/navigationb"
         android:title="NFC" />
     <item
-        android:id="@+id/navigationd"
+        android:id="@+id/navigationc"
         android:title="Transactions" />
     <item
         android:id="@+id/navigationg"

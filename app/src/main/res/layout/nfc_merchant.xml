@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nfc_merchant">
+
+    <EditText
+        android:id="@+id/txtAmount"
+        android:layout_width="220dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="316dp"
+        android:background="@drawable/whitebtn"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="00.00"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:textColorHint="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="87dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="158dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="41dp"
+        android:gravity="right"
+        android:text="5,000.00"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBack11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCorfirm"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="91dp"
+        android:background="@drawable/yesbtn"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEnterpriseName" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/nobtn"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCorfirm"
+        app:layout_constraintTop_toBottomOf="@+id/lblEnterpriseName" />
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="23dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="35dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/lblEnterpriseName"
+        android:layout_width="235dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Name of Enterprise"
+        android:textColor="@color/DarkGray"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAmount" />
+</android.support.constraint.ConstraintLayout>

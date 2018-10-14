@@ -57,15 +57,15 @@ public class BaseDrawerActivityMerchant extends AppCompatActivity implements Nav
                 }
                 switch (id){
                     case R.id.navigationa: startActivity(new
-                            Intent(getApplicationContext(), Home_Menu.class)); break;
+                            Intent(getApplicationContext(), Home_Menu_Merchant.class)); break;
                     case R.id.navigationb: startActivity(new
-                            Intent(getApplicationContext(), NFC.class)); break;
-                    case R.id.navigationd: startActivity(new
-                            Intent(getApplicationContext(), Transactions.class)); break;
+                            Intent(getApplicationContext(), NFC_Merchant.class)); break;
+                    case R.id.navigationc: startActivity(new
+                            Intent(getApplicationContext(), Transactions_Merchant.class)); break;
                     case R.id.navigationg: startActivity(new
-                            Intent(getApplicationContext(), Settings_Menu.class)); break;
+                            Intent(getApplicationContext(), Settings_Menu_Merchant.class)); break;
                     case R.id.navigationh: startActivity(new
-                            Intent(getApplicationContext(), Home_Menu.class)); break;
+                            Intent(getApplicationContext(), Home_Menu_Merchant.class)); break;
                     case R.id.navigationi: startActivity(new
                             Intent(getApplicationContext(), Login.class)); break;
                     default: break;

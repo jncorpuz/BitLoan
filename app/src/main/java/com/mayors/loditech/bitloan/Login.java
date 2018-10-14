@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.mayors.loditech.bitloan.Data.RetrofitClient;
+import com.mayors.loditech.bitloan.Merchant.Home_Menu_Merchant;
 import com.mayors.loditech.bitloan.Models.Account;
 import com.mayors.loditech.bitloan.Models.MerchantAccount;
 import com.mayors.loditech.bitloan.Models.Transaction;
@@ -73,13 +74,16 @@ public class Login extends AppCompatActivity {
                     try {
                         account = response.body();
                         if (account != null) {
+                            Intent i;
                             switch (account.Role) {
                                 case "0": //Manager
                                     //Toast.makeText(Login.this, "Manager", Toast.LENGTH_SHORT).show();
+                                    i = new Intent(Login.this, Home_Menu_Merchant.class);
+                                    startActivity(i);
                                     break;
                                 case "1": //Client
                                     //Toast.makeText(Login.this, "Client", Toast.LENGTH_SHORT).show();
-                                    Intent i = new Intent(Login.this, Home_Menu.class);
+                                    i = new Intent(Login.this, Home_Menu.class);
                                     startActivity(i);
                                     break;
                                 case "2": //Merchant

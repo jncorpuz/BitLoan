@@ -39,6 +39,7 @@
         <activity android:name=".Loan_MGT" />
         <activity android:name=".Loan_Application" />
         <activity android:name=".Rewards" />
+        <activity android:name=".Merchant.Home_Menu_Merchant" />
     </application>
 
 </manifest>

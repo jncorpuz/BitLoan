@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:theme="@style/NavigationViewStyle">
+
+
+    <item
+        android:id="@+id/navigationa"
+        android:title="Home" />
+    <item
+        android:id="@+id/navigationb"
+        android:title="NFC" />
+    <item
+        android:id="@+id/navigationd"
+        android:title="Transactions" />
+    <item
+        android:id="@+id/navigationg"
+        android:title="Settings" />
+    <item
+        android:id="@+id/navigationh"
+        android:title="About" />
+    <item
+        android:id="@+id/navigationi"
+        android:title="Sign Out" />
+
+</menu>

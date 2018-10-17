@@ -67,10 +67,10 @@
         app:layout_constraintBottom_toTopOf="@+id/button11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintTop_toBottomOf="@+id/cmdChangeEmailMerchant" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/cmdChangeEmailMerchant"
         android:layout_width="235dp"
         android:layout_height="50dp"
         android:layout_marginBottom="17dp"
@@ -84,7 +84,7 @@
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
-        android:onClick="ChangeEmailAddress_onClick"
+        android:onClick="cmdChangeEmail_Merchant"
         app:layout_constraintBottom_toTopOf="@+id/button10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -43,6 +43,10 @@
         <activity android:name=".Merchant.NFC_Merchant" />
         <activity android:name=".Merchant.Settings_Menu_Merchant" />
         <activity android:name=".Merchant.Transactions_Merchant" />
+        <activity android:name=".Merchant.Settings_A_Merchant" />
+        <activity android:name=".Merchant.Settings_B_Merchant" />
+        <activity android:name=".Merchant.Settings_C_Merchant" />
+        <activity android:name=".Merchant.Settings_D_Merchant" />
     </application>
 
 </manifest>
